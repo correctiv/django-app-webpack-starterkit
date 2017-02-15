@@ -22,7 +22,7 @@ See `webpack_loader.py` for details.
 
 rename this app, template folder and `./templatetags/my_app.py` to the name of your new app.
 
-add your app to django's `settings.INSTALLED_APP`
+add your app to django project the usual way
 
 render your bundle-urls with `{% webpack_bundle "js" %}` and `{% webpack_bundle "css" %}`, see `./templates/my_app/base.html` for example.
 
