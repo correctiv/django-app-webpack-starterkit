@@ -1,0 +1,60 @@
+{
+  "name": "yet-another-webpack-es6-starterkit",
+  "version": "1.0.0",
+  "description": "A light foundation for your next frontend project based on webpack.",
+  "scripts": {
+    "build": "rm -rf static/js/*; rm -rf static/css/*; webpack --config webpack-prod.config.js --colors",
+    "dev": "webpack-dev-server --config webpack-dev.config.js --watch --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wbkd/yet-another-webpack-es6-starterkit.git"
+  },
+  "keywords": [
+    "webpack",
+    "startkit",
+    "frontend",
+    "es6",
+    "javascript",
+    "webdev"
+  ],
+  "author": "webkid.io",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wbkd/yet-another-webpack-es6-starterkit/issues"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": 2
+    }
+  },
+  "homepage": "https://github.com/wbkd/yet-another-webpack-es6-starterkit#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "css-loader": "^0.26.1",
+    "dom-classlist": "^1.0.1",
+    "eslint": "^3.12.1",
+    "eslint-loader": "^1.3.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.17.0",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-bundle-tracker": "^0.2.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.9.0"
+  }
+}
